@@ -7,16 +7,15 @@ public class Mix4 {
         Mix4[] mixes = new Mix4[20];
         int i=0;
         while(i<9){
-            System.out.println(i);
+         //u   System.out.println(i);
             mixes[i]=new Mix4();
             mixes[i].counter=mixes[i].counter+1;
-            count+=1;
-            count+=mixes[i].maybeNew(i);
+            count++;
+            count=count+mixes[i].maybeNew(i);
             i=i+1;
         }
-       System.out.println(count + " " +  mixes[i].counter);
+       System.out.println(count + " " +  mixes[1].counter);
     }
-
     public  int maybeNew(int index){
         if(index<5){
             Mix4 mix= new Mix4();
